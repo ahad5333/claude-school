@@ -109,7 +109,7 @@ npm test
       </Section>
 
       <Section>
-        <NextLesson to="/lesson/multi-agent" title="Multi-agent systems" />
+        <NextLesson />
       </Section>
     </article>
   )

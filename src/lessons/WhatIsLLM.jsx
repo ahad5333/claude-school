@@ -108,10 +108,7 @@ export default function WhatIsLLM() {
       </Section>
 
       <Section>
-        <NextLesson
-          to={null}
-          title="Temperature and sampling — how the model decides which token to pick"
-        />
+        <NextLesson />
       </Section>
     </article>
   )

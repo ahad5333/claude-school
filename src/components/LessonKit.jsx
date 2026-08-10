@@ -109,20 +109,25 @@ export function KeyPoints({ points }) {
   )
 }
 
-export function NextLesson({ to, title }) {
-  if (!to) {
+export function NextLesson() {
+  const location = useLocation()
+  const currentSlug = location.pathname.replace('/lesson/', '')
+  const currentIndex = lessons.findIndex((lesson) => lesson.slug === currentSlug)
+  const next = currentIndex >= 0 && currentIndex < lessons.length - 1 ? lessons[currentIndex + 1] : null
+
+  if (!next) {
     return (
       <div className="lk-next lk-next-soon">
         <span className="eyebrow">Up next</span>
-        <p className="lk-next-title">{title}</p>
+        <p className="lk-next-title">More advanced lessons coming soon</p>
         <span className="lk-next-badge">Coming soon</span>
       </div>
     )
   }
   return (
-    <Link to={to} className="lk-next">
+    <Link to={`/lesson/${next.slug}`} className="lk-next">
       <span className="eyebrow">Up next</span>
-      <p className="lk-next-title">{title} →</p>
+      <p className="lk-next-title">{next.title} →</p>
     </Link>
   )
 }
