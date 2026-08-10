@@ -1,0 +1,9 @@
+.footer {
+  border-top: 1px solid var(--line);
+  margin-top: 96px;
+  padding: 40px 0;
+}
+.footer-inner { display: flex; flex-direction: column; gap: 8px; }
+.footer-brand { font-family: var(--font-display); font-weight: 700; font-size: 18px; }
+.footer-accent { color: var(--amber); }
+.footer-note { color: var(--text-mute); font-size: 14px; max-width: 480px; }

@@ -1,0 +1,27 @@
+.cb {
+  margin-top: 24px;
+}
+.cb-lang {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--text-mute);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.cb-pre {
+  background: var(--ink-900);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px;
+  overflow-x: auto;
+}
+.cb-pre code {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.7;
+  white-space: pre;
+  color: var(--text);
+}

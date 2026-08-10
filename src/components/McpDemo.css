@@ -1,0 +1,80 @@
+.mcp {
+  background: var(--ink-800);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-lg);
+  padding: 26px;
+  margin: 32px 0;
+}
+.mcp-header { margin-bottom: 18px; }
+.mcp-tag {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--violet);
+  background: var(--violet-soft);
+  padding: 4px 10px;
+  border-radius: 99px;
+}
+
+.mcp-pickers { display: flex; flex-direction: column; gap: 16px; margin-bottom: 22px; }
+.mcp-picker-label {
+  display: block;
+  font-size: 12px;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-mute);
+  margin-bottom: 8px;
+}
+.mcp-chips { display: flex; gap: 8px; flex-wrap: wrap; }
+.mcp-chip {
+  font-size: 13px;
+  padding: 7px 14px;
+  border-radius: 99px;
+  border: 1px solid var(--line);
+  background: var(--ink-900);
+  color: var(--text-mute);
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.15s;
+}
+.mcp-chip:hover { border-color: var(--line-strong); }
+.mcp-chip.on { background: var(--cyan-soft); border-color: var(--cyan); color: var(--cyan); }
+.mcp-chip-tool.on { background: var(--violet-soft); border-color: var(--violet); color: var(--violet); }
+
+.mcp-results { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.mcp-result {
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border: 1px solid var(--line);
+}
+.mcp-result-without { background: rgba(255, 138, 138, 0.06); border-color: rgba(255, 138, 138, 0.3); }
+.mcp-result-with { background: var(--violet-soft); border-color: var(--violet-line); }
+.mcp-result-label {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-mute);
+}
+.mcp-result-formula { font-size: 12px; color: var(--text-dim); font-family: var(--font-mono); }
+.mcp-result-value { font-size: 32px; font-weight: 700; font-family: var(--font-display); }
+.mcp-result-without .mcp-result-value { color: #ff8a8a; }
+.mcp-result-with .mcp-result-value { color: var(--violet); }
+.mcp-result-caption { font-size: 12px; color: var(--text-mute); }
+
+.mcp-footnote {
+  font-size: 13px;
+  color: var(--text-dim);
+  line-height: 1.6;
+  margin: 18px 0 0;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .mcp-results { grid-template-columns: 1fr; }
+}
