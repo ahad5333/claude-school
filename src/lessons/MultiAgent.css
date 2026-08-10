@@ -1,0 +1,29 @@
+.cb {
+  position: relative;
+  background: var(--ink-900);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  margin: 20px 0;
+  overflow: hidden;
+}
+.cb-lang {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-mute);
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--line);
+  background: var(--ink-800);
+}
+.cb-pre { margin: 0; padding: 16px; overflow-x: auto; }
+.cb-pre code {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.7;
+  color: #d6dcec;
+  background: none !important;
+  padding: 0 !important;
+  white-space: pre;
+}

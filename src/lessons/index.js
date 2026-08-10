@@ -101,6 +101,16 @@ export const lessons = [
     accent: 'amber',
     status: 'live',
     image: '/images/claude-code.png'
+  },
+  {
+    slug: 'multi-agent',
+    number: '11',
+    title: 'Multi-agent systems',
+    summary: 'How an orchestrator agent delegates a task to specialized worker agents running in parallel, and when the split is worth the extra cost.',
+    level: 'Advanced',
+    duration: '10 min',
+    accent: 'cyan',
+    status: 'live'
   }
 ]
 
