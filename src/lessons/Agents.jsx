@@ -129,7 +129,7 @@ while (true) {
       </Section>
 
       <Section>
-        <NextLesson to={null} title="More advanced lessons coming soon" />
+        <NextLesson />
       </Section>
     </article>
   )

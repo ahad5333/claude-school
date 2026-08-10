@@ -128,10 +128,7 @@ console.log(message.content[0].text);`}</CodeBlock>
       </Section>
 
       <Section>
-        <NextLesson
-          to={null}
-          title="Tool use — letting Claude call your own functions and become an agent"
-        />
+        <NextLesson />
       </Section>
     </article>
   )

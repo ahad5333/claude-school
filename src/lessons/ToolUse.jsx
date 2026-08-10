@@ -137,10 +137,7 @@ console.log(final.content[0].text);
       </Section>
 
       <Section>
-        <NextLesson
-          to={null}
-          title="RAG — giving Claude knowledge from your own documents"
-        />
+        <NextLesson />
       </Section>
     </article>
   )

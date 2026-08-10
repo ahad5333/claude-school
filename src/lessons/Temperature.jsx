@@ -121,10 +121,7 @@ export default function Temperature() {
       </Section>
 
       <Section>
-        <NextLesson
-          to="/lesson/prompt-engineering"
-          title="Writing great prompts — the four-part formula for sharper output"
-        />
+        <NextLesson />
       </Section>
     </article>
   )

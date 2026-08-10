@@ -98,10 +98,7 @@ export default function PromptEngineering() {
       </Section>
 
       <Section>
-        <NextLesson
-          to={null}
-          title="Structured output with XML tags — getting Claude to return clean, parseable data"
-        />
+        <NextLesson />
       </Section>
     </article>
   )
