@@ -13,6 +13,7 @@ import LessonRAG from './lessons/RAG.jsx'
 import LessonAgents from './lessons/Agents.jsx'
 import LessonMcp from './lessons/Mcp.jsx'
 import LessonClaudeCode from './lessons/ClaudeCode.jsx'
+import LessonMultiAgent from './lessons/MultiAgent.jsx'
 import CheatSheet from './pages/CheatSheet.jsx'
 
 function LessonProgressSync() {
@@ -44,6 +45,7 @@ export default function App() {
         <Route path="/lesson/agents" element={<LessonAgents />} />
         <Route path="/lesson/mcp" element={<LessonMcp />} />
         <Route path="/lesson/claude-code" element={<LessonClaudeCode />} />
+        <Route path="/lesson/multi-agent" element={<LessonMultiAgent />} />
         <Route path="/cheatsheet" element={<CheatSheet />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

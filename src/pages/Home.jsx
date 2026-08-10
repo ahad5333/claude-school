@@ -27,7 +27,7 @@ export default function Home() {
 
           <div className="hero-stats">
             <div className="stat">
-              <span className="stat-num">06</span>
+              <span className="stat-num">{String(lessons.filter((l) => l.status === 'live').length).padStart(2, '0')}</span>
               <span className="stat-label">Live lessons</span>
             </div>
             <div className="stat">
